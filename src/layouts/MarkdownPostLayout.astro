@@ -1,7 +1,10 @@
 ---
 const { frontmatter } = Astro.props
+const { title, pubDate, description, author } = frontmatter
 ---
 
-<h1>{frontmatter.title}</h1>
-<p>Written by {frontmatter.author}</p>
+<h1> {title}</h1>
+<p>{pubDate.slice(0,10)}</p>
+<p><em>{description}</em></p>
+<p>Written by: {author}</p>
 <slot />
