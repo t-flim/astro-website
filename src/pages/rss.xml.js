@@ -1,4 +1,4 @@
-import rss, { pagesGlobToRssItems } from "@astra/rss"
+import rss, { pagesGlobToRssItems } from "@astrojs/rss"
 
 export async function get() {
 
